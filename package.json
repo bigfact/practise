@@ -1,0 +1,26 @@
+{
+  "name": "practise",
+  "version": "1.0.0",
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.31",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "Tips: please use 'git cz' to commit changes"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "license": "MIT"
+}
