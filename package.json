@@ -1,6 +1,9 @@
 {
   "name": "practise",
   "version": "1.0.0",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.31",
     "cz-conventional-changelog": "^3.1.0",
