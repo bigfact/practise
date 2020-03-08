@@ -155,7 +155,7 @@ var Student = /*#__PURE__*/ (function(_Person) {
 
     _classCallCheck(this, Student)
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Student).call(this, name, age))
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Student).call(this))
     _this.grade = grade
     return _this
   }

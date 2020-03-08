@@ -12,7 +12,7 @@ class Person {
 
 class Student extends Person {
   constructor(name, age, grade) {
-    super(name, age)
+    super()
     this.grade = grade
   }
 
