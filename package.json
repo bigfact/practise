@@ -1,6 +1,7 @@
 {
   "name": "practise",
   "version": "1.0.0",
+  "author": "bigfact",
   "scripts": {
     "build": "lerna run build && npm run format",
     "format": "prettier ./**/*.js --write",
