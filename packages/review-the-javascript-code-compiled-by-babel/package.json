@@ -4,7 +4,11 @@
   "description": "review the javascript code compiled by babel",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib"
+    "build": "npm run clean && npm run build:compatible && npm run build:morden && npm run format",
+    "clean": "rm -rf lib",
+    "build:morden": "babel --config-file ./babel.config.morden.js --out-dir lib/morden src",
+    "build:compatible": "babel --config-file ./babel.config.compatible.js --out-dir lib/compatible src",
+    "format": "prettier ./**/*.js --write"
   },
   "author": "bigfact",
   "license": "MIT",
@@ -12,7 +16,8 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
     "@babel/plugin-transform-arrow-functions": "^7.8.3",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "prettier": "1.19.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",

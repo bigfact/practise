@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "bigfact",
   "scripts": {
-    "build": "lerna run build && npm run format",
-    "format": "prettier ./**/*.js --write",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "devDependencies": {
@@ -12,7 +12,6 @@
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
-    "prettier": "1.19.1",
     "validate-commit-msg": "^2.14.0"
   },
   "config": {
