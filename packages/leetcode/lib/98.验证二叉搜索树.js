@@ -58,6 +58,7 @@ var isValidBST2 = function (root) {
   return true
 }
 
+// 错误的
 var isValidBST3 = function (root) {
   if (!root) return true
   let left = !root.left || root.val > root.left.val
